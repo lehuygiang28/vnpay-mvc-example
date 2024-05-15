@@ -1,0 +1,81 @@
+{{#if result}}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h1 class="h2 fw-bold">Vnpay Demo</h1>
+                    <p class="text-muted">Kết quả của return url</p>
+                    <form class="container row gy-2 gx-3 align-items-center">
+                        <div class="mb-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Các data từ vnpay trả về có hợp lệ hay không.">
+                            <label class="form-label">
+                                Xác thực request thành công?
+                            </label>
+                            <input
+                                class="form-control fw-bold {{#if result.isVerified }}text-success{{else}}text-danger{{/if}}"
+                                readonly value="{{result.isVerified}}">
+                            <p class="fs-6 fw-light">* Các data từ vnpay trả về có hợp lệ hay không.</p>
+                        </div>
+                        <div class="mb-2" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Giao dịch đã thành công bên vnpay chưa.">
+                            <label class="form-label">
+                                Giao dịch thành công?
+                            </label>
+                            <input
+                                class="form-control fw-bold {{#if result.isSuccess }}text-success{{else}}text-danger{{/if}}"
+                                readonly value="{{result.isSuccess}}">
+                            <p class="fs-6 fw-light">* Giao dịch đã thành công bên vnpay chưa.</p>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Message</label>
+                            <input class="form-control" readonly value="{{result.message}}">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Số tiền</label>
+                            <input class="form-control" readonly value="{{result.vnp_Amount}}">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Ngân hàng</label>
+                            <input class="form-control" readonly value="{{result.vnp_BankCode}}">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">vnp_BankTranNo</label>
+                            <input class="form-control" readonly value="{{result.vnp_BankTranNo}}">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Loại thẻ</label>
+                            <input class="form-control" readonly value="{{result.vnp_CardType}}">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Nội dung</label>
+                            <textarea class="form-control" rows="2" readonly>{{result.vnp_OrderInfo}}</textarea>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Thời gian thanh toán</label>
+                            <input class="form-control" readonly value="{{result.vnp_PayDate}}">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Mã giao dịch</label>
+                            <input class="form-control" readonly value="{{result.vnp_TransactionNo}}">
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Mã trạng thái giao dịch</label>
+                            <input class="form-control" readonly value="{{result.vnp_TransactionStatus}}">
+                            <p class="fs-6 fw-light">* Mặc định 00 là thành công</p>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Mã đơn hàng</label>
+                            <input class="form-control" readonly value="{{result.vnp_TxnRef}}">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{else}}
+<script>
+    window.location.href = '/';
+</script>
+{{/if}}

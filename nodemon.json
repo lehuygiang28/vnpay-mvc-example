@@ -1,0 +1,6 @@
+{
+    "watch": ["src", ".env", "*/**/*.hbs"],
+    "ext": ".ts,.js,.hbs",
+    "ignore": [],
+    "exec": "npx ts-node ./src/main.ts"
+}
