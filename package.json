@@ -5,7 +5,7 @@
         "url": "git+https://github.com/lehuygiang28/vnpay-mvc-example.git"
     },
     "version": "0.0.1",
-    "description": "An open-source nodejs library support to payment with VNPay",
+    "description": "An open-source example of VNPAY payment integration using Express.js and vnpay package",
     "scripts": {
         "start": "npx ts-node ./src/main.ts",
         "build": "rimraf dist && tsc",
@@ -36,6 +36,5 @@
         "prettier": "^3.2.5",
         "rimraf": "^5.0.7",
         "ts-node": "^10.9.2"
-    },
-    "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+    }
 }
