@@ -32,6 +32,7 @@ if (!process.env.VNPAY_SECURE_SECRET || !process.env.VNPAY_TMN_CODE) {
 const vnpay = new VNPay({
     secureSecret: process.env.VNPAY_SECURE_SECRET,
     tmnCode: process.env.VNPAY_TMN_CODE,
+    testMode: true,
 });
 
 const hbs = engine({ extname: 'hbs', defaultLayout: 'main', encoding: 'utf-8' });
