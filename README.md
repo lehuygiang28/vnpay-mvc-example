@@ -45,3 +45,5 @@ Trước khi bắt đầu, hãy đảm bảo rằng bạn đã đọc [hướng 
 <a href="https://github.com/lehuygiang28/vnpay-mvc-example/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=lehuygiang28/vnpay-mvc-example&max=20" />
 </a>
+
+<!-- GitAds-Verify: J4Y4BKRZ9S6OJNZZFONBSDR5B2EW6X25 -->
