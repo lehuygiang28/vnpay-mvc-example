@@ -1,5 +1,7 @@
 # vnpay-mvc-example
 
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=lehuygiang28/vnpay-mvc-example@github)](https://gitads.dev/v1/ad-track?source=lehuygiang28/vnpay-mvc-example@github)
+
 ## Cài đặt
 
 1. Cài đặt phụ thuộc
