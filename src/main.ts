@@ -1,13 +1,11 @@
 import express from 'express';
 import { engine } from 'express-handlebars';
 import { join } from 'path';
+import type { BuildPaymentUrl, VerifyReturnUrl, VerifyIpnCall } from 'vnpay';
 import {
     VNPay,
     parseDate,
     ProductCode,
-    BuildPaymentUrl,
-    VerifyReturnUrl,
-    VerifyIpnCall,
     IpnFailChecksum,
     IpnOrderNotFound,
     IpnInvalidAmount,

@@ -1,5 +1,6 @@
 {
     "name": "vnpay-mvc-example",
+    "main": "dist/main.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/lehuygiang28/vnpay-mvc-example.git"
